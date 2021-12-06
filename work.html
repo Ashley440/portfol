@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Work & Projects</title>
+        <link rel="stylesheet" href="landing_Page_styles.css">
+        <script src="jvs.js"></script>
+    </head>
+    <body>
+        <a href="landing_page.html" id="name"><img title="Asalinto" id = "icon" src="resources/icon.png"></a>
+        <nav class="navbar">
+            <span id="nav">
+                <a href="about.html"  id="about" >About</a>
+                <a href="work.html" id="projects" style="color:gold" > Projects</a>
+            </span>
+        </nav>
+
+        <div class = "work">
+
+            <h1 style="text-align: center;color:gold;background-color: #4848e4;">Software Engineering</h1>
+            <h3><ul>
+                <li>Agile-Scrum, Documentation, Human Computer Interaction, User Stories, Database Management, Database Design</li>
+                <li>Presentation, Data Gathering, Data Analysis, Metaphoric Design, UX Design</li>
+            </ul></h3>
+            <h3>1. Database design for this site. ERD Model on Lucid App</h3>
+            <h3 style="text-align: center;"><img title="ERD Model" src="resources/images/lc.png" height="350"/></h3>
+            <h3>2. Prototype on Figma. Crime Solution.</h3>
+            <h3>
+                <span>
+                    <a><video height="350" autoplay controls muted>
+                        <source src="resources/videos/movie.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video></a>
+                    <a><video height="350" autoplay controls muted>
+                        <source src="resources/videos/police.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video></a>
+                </span>
+            </h3>
+
+
+        </div>
+
+        <div class = "work">
+
+            <h1 style="text-align: center;color:gold;background-color: #4848e4;">Web Development</h1>
+            <h3><ul>
+                <li>HTML, CSS, JavaScript, PHP, React.js, Node.js, BootStrap, JQuery</li>
+            </ul></h3>
+            <h3>1. BootStrap Functionality</h3>
+            <iframe src="https://asmylstrate.herokuapp.com/" height="350" width="1400"></iframe>
+            <h3>2. Email and Database Functionality</h3>
+            <iframe src="https://amandaexample.herokuapp.com/" height="350" width="1400"></iframe>
+        </div>
+
+        <div class = "work">
+
+            <h1 style="text-align: center;color:gold;background-color: #4848e4;">Machine Learning</h1>
+            <h3><ul>
+                <li>Numpy, Jupyter NoteBook, SKLearn, Glowscripts, Modeling, Simulation</li>
+            </ul></h3>
+            <h3>The projects below are developed using puthon, glowscript and the numpy library. Most of the projects are statistical models.</h3>
+            <h3>
+                <span>
+                    <a><video height="350" autoplay controls muted>
+                    <source src="resources/videos/ml.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                    </video></a>
+                    <a><video height="350" autoplay controls muted>
+                    <source src="resources/videos/mlp.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                    </video></a>
+                </span></h3>
+        </div>
+        
+        <div id="twoColumns">
+            
+            <div id="contact">
+                <div id = "form">
+                    <h2>Email</h2>
+                    <form method="POST" action="http://localhost/sendmessage.php">
+                        <input class="inpu" type="text" placeholder="Full name" name="fname" required/>
+                        <input class="inpu" type="email" placeholder="Email" name="email"  required/></br>
+                        <textarea class="inpu" id="msg" placeholder="Message" name="msg" rows="10" required ></textarea></br>
+                        <input class="inpu" id="btn" type="submit" value="Send" name="name"/>
+                    </form>
+                    </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <a  onclick="contactView()">Contact</a>
+        </div>
+
+    </body>
+
+</html>

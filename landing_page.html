@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang='en' >
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+        <link rel="stylesheet" href="landing_Page_styles.css">
+        <script src="jvs.js"></script>
+        
+    </head>
+
+    <body onmousemove="navbarShow()" onscroll="navbarHide()">
+        <div id="hank"></div>
+        <nav class="navbar">
+            <span id="nav">
+                <a href="#emblems" id="about">About</a>
+                <a href="#myprojects" id="projects">Projects</a>
+                <a href="http://localhost/messages.php" id="message">Emails</a>
+                <a href="resources/pdfs/mycv.pdf" id="message">Resume</a>
+            </span>
+        </nav>
+        
+            <div class = "introduction1">
+                <h1 id="img"><img title="picture" src="resources/kol.png"/></h1>
+                <h1>Software Engineer - Developer - ML Researcher</h1>
+                <span>
+                    <a href='#' id='red'></a>
+                    <a href='#' id='yellow'></a>
+                    <a href='#' id='blue'></a>
+                    <a href='#' id='green'></a>
+                </span>
+            </div>
+     
+            <div id="contact">
+                <div id = "form">
+                    <h2>Email</h2>
+                    <form method="POST" action="http://localhost/sendmessage.php">
+                        <input class="inpu" type="text" placeholder="Full name" name="fname" required/>
+                        <input class="inpu" type="email" placeholder="Email" name="email"  required/></br>
+                        <textarea class="inpu" id="msg" placeholder="Message" name="msg" rows="10" required ></textarea></br>
+                        <input class="inpu" id="btn" type="submit" value="Send" name="name"/>
+                    
+                    </form>
+                </div>
+            </div>
+
+        <div class="contact" id="contBtn">
+            <a  onclick="contactView()">Contact</a>
+        </div>
+
+
+        <div id="emblems">
+            <span id="institutions">
+                <a ><img id="ms" title="Microsoft" src="resources/ms.png"/></a>
+                <a ><img id="uwc" title="University of Western Cape" src="resources/uwc.png"/></a>
+                <a ><img id="wced" title="Western Cape Education Department" src="resources/wced.jfif"/></a>
+                <a onclick="photo()"><img id="pt" title="My Gallery" src="resources/photos.png"/></a>
+            </span>
+        </div>
+
+
+
+        <div id="aboutme">
+            <div class="pic">
+                <img id="picme" title="Asalinto Ashley Simayile" src="resources/images/me (2).png"/></br>
+                <span>
+                    <a href="https://github.com/Ashley440" target="blank"><img title="Github" src="resources/images/github.png" height="30"/></a>
+                    <a href="https://twitter.com/aasimayile" target="blank"><img title="Twitter" src="resources/images/twitter.png" height="30"/></a>
+                    <a href="https://www.linkedin.com/in/ashley-asalinto-simayile-8a7428173/" target="blank"><img title="LinkedIn" src="resources/images/lin.png" height="30"/></a>
+                </span>
+            </div>
+            
+            <div id="about_content">
+                <h1>Asalinto Ashley Simayile</h1>
+                <h3>I'm a graduate (UWC'2021) from University of the Western Cape (UWC), with a bachelors degree in computer science (BSc).
+                    I am in an internship programm at UWC. I'm a cloud-computing,software engineering, artificial intelligence a machine learning aspirant. 
+                </h3>
+
+                <h3>The cloud solution that I am learning at the moment is Azure from Microsoft, I want to be a Microsoft developer.
+                    This is a good opportunity for me because it will help me reach my goal of becoming a full stack softawre engineer with
+                    the tools provided by Microsoft.
+                </h3>
+
+                <h3>I love using ASP.NET frame for my software projects where possible, it is the most rescent framework that I use and I am continously
+                    learning new fetures from it.
+                    I would like to work on more machine 
+                </h3>
+            </div>
+        </div>
+
+        <div id="myprojects">
+            <div class = "work">
+
+                <h1 style="text-align: center; padding-top: 2%;padding-bottom: 2%;">Software Engineering</h1>
+                <h3>Agile-Scrum, Documentation, Human Computer Interaction, User Stories, Database Management, Database DesignPresentation, Data Gathering, Data Analysis, Metaphoric Design, UX Design</h3>
+                <h3>1. Database design for this site. ERD Model on Lucid App</h3>
+                <h3 style="text-align: center;"><img title="ERD Model" src="resources/images/lc.png" height="350"/></h3>
+                <h3>2. Prototype on Figma. Crime Solution.</h3>
+                <h3>
+                    <span>
+                        <a><video height="350" autoplay controls muted>
+                            <source src="resources/videos/movie.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                          </video></a>
+                        <a><video height="350" autoplay controls muted>
+                            <source src="resources/videos/police.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                          </video></a>
+                    </span>
+                </h3>
+    
+    
+            </div>
+    
+            <div class = "work1">
+    
+                <h1 style="text-align: center;padding-top: 2%;padding-bottom: 2%;">Web Development</h1>
+                <h3>HTML, CSS, JavaScript, PHP, React.js, Node.js, BootStrap, JQuery</h3>
+                <h3>1. BootStrap Functionality</h3>
+                <iframe src="https://asmylstrate.herokuapp.com/" height="350" width="1400"></iframe>
+                <h3>2. Email and Database Functionality</h3>
+                <iframe src="https://amandaexample.herokuapp.com/" height="350" width="1400"></iframe>
+            </div>
+    
+            <div class = "work2">
+    
+                <h1 style="text-align: center;padding-top: 2%;padding-bottom: 2%;">Machine Learning</h1>
+                <h3>Numpy, Jupyter NoteBook, SKLearn, Glowscripts, Modeling, Simulation</h3>
+                <h3>The projects below are developed using puthon, glowscript and the numpy library. Most of the projects are statistical models.</h3>
+                <h3>
+                    <span>
+                        <a><video height="350" autoplay controls muted>
+                        <source src="resources/videos/ml.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                        </video></a>
+                        <a><video height="350" autoplay controls muted>
+                        <source src="resources/videos/mlp.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                        </video></a>
+                    </span></h3>
+            </div>
+            
+        </div>
+        <a href="landing_page.html" id="tothetop" >TOP</a>
+        
+        
+    </body>
+
+</html>
